@@ -1,0 +1,11 @@
+Airline Reservation System 
+ Admin Application 
+    -flight management (code)
+    -create flight           (flight_create.html)
+    -change ticket price     (flight_edit.html)
+    -delete flights
+    -display all flights(flight_list.html)
+
+    flights: id, number, airway_name, source destination. capacity , price
+ customer application  
+ - Ticket Booking (Travel Plan)
