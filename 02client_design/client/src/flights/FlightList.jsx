@@ -1,14 +1,16 @@
+import PageHeader from "../header/PageHeader";
+
 function FlightList() {
     return (
         <>
-
-            <h3>List of flights</h3>
+            <PageHeader PageNumber={1}/>
+            <h3>List of Flights</h3>
             <div className="container">
-                <table className="table table-success table-striped">
+                <table className="table table-primary table-striped">
                     <thead className="table-dark">
                         <tr>
-                            <th scope="col">flight_number</th>
-                            <th scope="col">Airline name</th>
+                            <th scope="col">Flight Number</th>
+                            <th scope="col">Airline Name</th>
                             <th scope="col">Source</th>
                             <th scope="col">Destination</th>
                             <th></th>
@@ -17,27 +19,27 @@ function FlightList() {
                     <tbody>
                         <tr>
                             <th scope="row">AI 845</th>
-                            <td className="text-primary">Air India</td>
+                            <td>Air India</td>
                             <td>Mumbai</td>
-                            <td>Abu Dhabi</td>
-                            <td><a href="flight_edit.html?id=10234590" className="btn btn-warning">edit</a>
-                                <button className="btn btn-danger">delete</button></td>
+                            <td>Abu dhabi</td>
+                            <td>
+                                <a href="/flights/edit/1023459870" className="btn btn-warning">Edit Price</a>
+                                <button className="btn btn-danger">Delete</button>
+                            </td>
                         </tr>
                         <tr>
-                            <th scope="row">6E 108</th>
-                            <td className="text-primary">Indigo</td>
+                            <th scope="row">6E 151</th>
+                            <td>Indigo</td>
+                            <td>Hyderabad</td>
                             <td>Bengaluru</td>
-                            <td>Delhi</td>
-                            <td><a href="flight_edit.html?id=10234598" className="btn btn-warning">edit</a>
-                                <button className="btn btn-danger">delete</button></td>
+                            <td>
+                                <a href="/flights/edit/202111222" className="btn btn-warning">Edit Price</a>
+                                <button className="btn btn-danger">Delete</button>
+                            </td>
                         </tr>
-
                     </tbody>
                 </table>
             </div>
-
-
-
         </>
     );
 }
